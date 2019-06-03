@@ -5,3 +5,23 @@ function jediName(firstName, lastName){
 }
 
 console.log(jediName('john', 'denver'));
+
+function beyond(num) {
+  if (num === 0) {
+    console.log("Staying home.");
+  }
+
+  else if ((num < 0) && (num !== Infinity)) {
+    console.log("To negative infinity.");
+  }
+
+  else if ((num > 0) && (num !== Infinity)) {
+    console.log("To infinity.");
+  }
+
+  else {
+    console.log("And beyond.");
+  }
+}
+
+beyond(10);
