@@ -89,3 +89,29 @@ function daysInMonth(month,leapYear) {
 }
 
 daysInMonth("October");
+
+
+function RPSGame(Choice) {
+  const randomNo = Math.floor(Math.random() * 3) + 1;
+  
+  if(Choice === 1 && randomNo === 3) {
+    return 'Player Wins';
+  } else if (Choice === 1 && randomNo === 2) {
+    return 'Player loses';
+  } else if (Choice === 1 && randomNo === 1){
+    return 'Tie';
+  } else if (Choice === 2 && randomNo === 1) {
+    return 'Computer Wins';
+  } else if (Choice === 2 && randomNo === 2) {         return 'Tie';
+  } else if (Choice === 2 && randomNo === 3) {
+    return 'Computer Wins';
+  } else if (Choice === 3 && randomNo === 1) {
+    return 'Player Wins';
+  } else if (Choice === 3 && randomNo === 2) {
+    return 'Player Wins';
+  } else if (Choice === 3 && randomNo === 3) {
+    return 'Tie';
+  }
+}
+
+console.log(RPSGame(2));
